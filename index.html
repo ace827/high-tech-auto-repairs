@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>High Tech Auto Repairs - Lowell, MA</title>
+  <meta name="description" content="High Tech Auto Repairs in Lowell, MA. 4.6 stars, A+ BBB, 1-year warranty. Brakes, engine, AC, suspension and more. Call (978) 943-6548."/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <!-- RETELL AI VOICE WIDGET -->
+  <script
+    id="retell-widget"
+    src="https://dashboard.retellai.com/retell-widget-v2.js"
+    data-voice-public-key="public_key_082411904b914a2bb10ab"
+    data-voice-agent-id="agent_21468860a0608bc9d7e1ffbfc5"
+    data-fab-text="Talk to Our AI"
+    data-color="#1d4ed8"
+    data-title="High Tech Auto Repairs"
+    data-bot-name="High Tech Auto AI"
+  ></script>
+  <style>
+    :root{
+      --ink:#080f1e;--ink2:#0d1730;--ink3:#121f3d;
+      --blue:#1d4ed8;--blue2:#3b82f6;--blue3:#1e40af;
+      --off:#f8fafc;--warm:#f1f5f9;--border:#e2e8f0;
+      --mid:#64748b;--dark:#1e293b;--card:#f8fafc;--white:#ffffff;
+      --silver:#94a3b8;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Inter',sans-serif;background:var(--off);color:var(--dark);line-height:1.6;overflow-x:hidden;}
+    h1,h2,h3,h4{font-family:'Montserrat',sans-serif;line-height:1.15;}
+    a{color:inherit;text-decoration:none;}
+    .sprite{display:none;}
+
+    /* TOPBAR */
+    .topbar{background:var(--ink);color:rgba(255,255,255,.6);font-size:.76rem;font-weight:500;letter-spacing:.04em;padding:.5rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+    .topbar-left{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;}
+    .topbar-item{display:flex;align-items:center;gap:.4rem;}
+    .topbar svg{width:12px;height:12px;opacity:.55;flex-shrink:0;}
+    .topbar-cta{background:var(--blue);color:#fff;padding:.3rem .85rem;border-radius:3px;font-weight:700;font-size:.75rem;letter-spacing:.06em;transition:background .2s;white-space:nowrap;display:flex;align-items:center;gap:.35rem;}
+    .topbar-cta:hover{background:var(--blue2);}
+    .topbar-cta svg{width:12px;height:12px;opacity:1;}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:100;background:rgba(8,15,30,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:64px;}
+    .nav-brand{display:flex;align-items:center;gap:.85rem;}
+    .nav-logo{width:42px;height:42px;background:var(--blue);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .nav-logo svg{width:22px;height:22px;color:#fff;}
+    .nav-name{font-family:'Montserrat',sans-serif;font-size:1.05rem;font-weight:800;color:#fff;line-height:1.1;letter-spacing:.01em;}
+    .nav-city{font-size:.65rem;color:var(--blue2);letter-spacing:.12em;text-transform:uppercase;font-weight:600;}
+    .nav-links{display:flex;align-items:center;gap:1.8rem;}
+    .nav-links a{color:rgba(255,255,255,.65);font-size:.83rem;font-weight:500;letter-spacing:.03em;transition:color .2s;}
+    .nav-links a:hover{color:var(--blue2);}
+    .nav-cta{background:var(--blue);color:#fff;padding:.45rem 1.15rem;border-radius:5px;font-size:.82rem;font-weight:700;letter-spacing:.04em;transition:background .2s,transform .15s;display:flex;align-items:center;gap:.4rem;white-space:nowrap;}
+    .nav-cta:hover{background:var(--blue2);transform:translateY(-1px);}
+    .nav-cta svg{width:14px;height:14px;}
+
+    /* HERO */
+    .hero{position:relative;min-height:90vh;display:flex;align-items:center;overflow:hidden;}
+    .hero-img{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1609010697446-11f2155278f0?w=1920&q=85');background-size:cover;background-position:center 40%;}
+    .hero-img::after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,rgba(8,15,30,.94) 0%,rgba(8,15,30,.75) 50%,rgba(8,15,30,.3) 100%);}
+    .hero-content{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:5rem 2rem 4rem;display:grid;grid-template-columns:1fr 330px;gap:4rem;align-items:center;width:100%;}
+    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(29,78,216,.18);border:1px solid rgba(59,130,246,.4);color:var(--blue2);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;padding:.32rem .85rem;border-radius:3px;margin-bottom:1.2rem;}
+    .hero-badge svg{width:11px;height:11px;}
+    .hero h1{font-size:clamp(2.5rem,5vw,4.4rem);font-weight:900;color:#fff;line-height:1.05;margin-bottom:1.2rem;letter-spacing:-.015em;}
+    .hero h1 em{color:var(--blue2);font-style:normal;}
+    .hero-sub{font-size:1.05rem;color:rgba(255,255,255,.7);max-width:510px;margin-bottom:2rem;font-weight:300;line-height:1.78;}
+    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;}
+    .btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--blue);color:#fff;padding:.85rem 1.8rem;border-radius:5px;font-weight:700;font-size:.95rem;letter-spacing:.03em;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 20px rgba(29,78,216,.4);}
+    .btn-primary:hover{background:var(--blue2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(29,78,216,.5);}
+    .btn-primary svg{width:16px;height:16px;}
+    .btn-outline{display:inline-flex;align-items:center;gap:.5rem;background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.3);padding:.85rem 1.8rem;border-radius:5px;font-weight:600;font-size:.95rem;transition:border-color .2s,color .2s;}
+    .btn-outline:hover{border-color:var(--blue2);color:var(--blue2);}
+    .btn-outline svg{width:16px;height:16px;}
+
+    /* HERO CARD */
+    .hero-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(20px);border-radius:10px;padding:2rem;color:#fff;}
+    .hero-card-title{font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:800;color:var(--blue2);margin-bottom:1.2rem;display:flex;align-items:center;gap:.5rem;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:.85rem;letter-spacing:.04em;}
+    .hero-card-title svg{width:15px;height:15px;}
+    .card-row{display:flex;align-items:flex-start;gap:.7rem;margin-bottom:1rem;font-size:.87rem;}
+    .card-row svg{width:14px;height:14px;color:var(--blue2);flex-shrink:0;margin-top:2px;}
+    .card-label{color:rgba(255,255,255,.4);font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;display:block;margin-bottom:.12rem;}
+    .card-hours-grid{display:grid;grid-template-columns:auto 1fr;gap:.2rem .6rem;font-size:.79rem;}
+    .card-hours-grid .day{color:rgba(255,255,255,.45);}
+    .card-hours-grid .time{color:rgba(255,255,255,.9);font-weight:600;}
+    .hero-rating{margin-top:1.2rem;padding-top:1.1rem;border-top:1px solid rgba(255,255,255,.08);display:flex;align-items:center;gap:.6rem;}
+    .stars{display:flex;gap:2px;}
+    .stars svg{width:13px;height:13px;color:#fbbf24;}
+    .hero-rating-text{font-size:.77rem;color:rgba(255,255,255,.55);}
+    .hero-rating-text strong{color:#fff;}
+
+    /* BBB BADGE */
+    .bbb-strip{background:var(--ink2);border-bottom:1px solid rgba(255,255,255,.06);padding:.7rem 2rem;display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;}
+    .bbb-item{display:flex;align-items:center;gap:.5rem;font-size:.76rem;color:rgba(255,255,255,.5);font-weight:500;}
+    .bbb-item svg{width:14px;height:14px;color:var(--blue2);}
+    .bbb-item strong{color:rgba(255,255,255,.85);}
+
+    /* STATS */
+    .stats{background:var(--blue);padding:2rem;}
+    .stats-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center;}
+    .stat-item{padding:.5rem;}
+    .stat-num{font-family:'Montserrat',sans-serif;font-size:2.4rem;font-weight:900;color:#fff;line-height:1;margin-bottom:.3rem;}
+    .stat-label{font-size:.72rem;color:rgba(255,255,255,.8);font-weight:600;letter-spacing:.07em;text-transform:uppercase;}
+
+    /* SECTIONS */
+    section{padding:5.5rem 2rem;}
+    .section-inner{max-width:1100px;margin:0 auto;}
+    .section-eyebrow{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);margin-bottom:.6rem;}
+    .section-title{font-size:clamp(1.9rem,3.5vw,2.7rem);font-weight:900;color:var(--ink);margin-bottom:1rem;letter-spacing:-.015em;}
+    .section-title.light{color:#fff;}
+    .section-lead{font-size:1rem;color:var(--mid);max-width:560px;line-height:1.75;margin-bottom:3rem;}
+    .section-lead.light{color:rgba(255,255,255,.55);}
+
+    /* SERVICES */
+    .services-section{background:var(--off);}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+    .service-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1.8rem;transition:transform .2s,box-shadow .2s,border-color .2s;}
+    .service-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.07);border-color:var(--blue);}
+    .service-icon{width:50px;height:50px;background:rgba(29,78,216,.08);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem;}
+    .service-icon svg{width:24px;height:24px;color:var(--blue);}
+    .service-name{font-family:'Montserrat',sans-serif;font-size:1rem;font-weight:800;color:var(--ink);margin-bottom:.5rem;letter-spacing:.01em;}
+    .service-desc{font-size:.84rem;color:var(--mid);line-height:1.65;margin-bottom:.9rem;}
+    .service-list{list-style:none;display:flex;flex-direction:column;gap:.35rem;}
+    .service-list li{font-size:.8rem;color:var(--dark);display:flex;align-items:center;gap:.5rem;}
+    .service-list li::before{content:'';width:5px;height:5px;background:var(--blue);border-radius:50%;flex-shrink:0;}
+
+    /* ABOUT */
+    .about-section{background:var(--warm);}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
+    .about-img-wrap{position:relative;}
+    .about-img{width:100%;height:460px;background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85');background-size:cover;background-position:center;border-radius:8px;}
+    .about-badge-circle{position:absolute;bottom:-1.5rem;right:-1.5rem;width:130px;height:130px;background:var(--blue);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.25);}
+    .about-badge-num{font-family:'Montserrat',sans-serif;font-size:1.9rem;font-weight:900;line-height:1;}
+    .about-badge-label{font-size:.58rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;opacity:.9;margin-top:.2rem;}
+    .about-checks{list-style:none;margin:1.5rem 0 2rem;display:flex;flex-direction:column;gap:.85rem;}
+    .about-checks li{display:flex;align-items:flex-start;gap:.75rem;font-size:.93rem;color:var(--dark);}
+    .check-dot{width:20px;height:20px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+    .check-dot svg{width:11px;height:11px;color:#fff;}
+
+    /* MARK SECTION */
+    .mark-section{background:var(--ink2);}
+    .mark-section .section-eyebrow{color:var(--blue2);}
+    .mark-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:center;}
+    .mark-img{width:100%;height:420px;background-image:url('https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=800&q=85');background-size:cover;background-position:center top;border-radius:8px;position:relative;overflow:hidden;}
+    .mark-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to top, rgba(8,15,30,.7) 0%, transparent 60%);}
+    .mark-caption{position:absolute;bottom:1.5rem;left:1.5rem;right:1.5rem;color:#fff;font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.1rem;}
+    .mark-sub{font-size:.75rem;color:var(--blue2);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:.25rem;}
+    .mark-quote{font-family:'Montserrat',sans-serif;font-size:clamp(1.2rem,2vw,1.7rem);font-style:italic;color:rgba(255,255,255,.9);line-height:1.5;margin-bottom:1.5rem;font-weight:600;position:relative;padding-left:1.5rem;}
+    .mark-quote::before{content:'';position:absolute;left:0;top:.2rem;bottom:.2rem;width:3px;background:var(--blue2);border-radius:2px;}
+    .mark-body{font-size:.9rem;color:rgba(255,255,255,.55);line-height:1.8;margin-bottom:2rem;}
+    .mark-chips{display:flex;flex-wrap:wrap;gap:.6rem;}
+    .chip{background:rgba(29,78,216,.2);border:1px solid rgba(59,130,246,.3);color:var(--blue2);font-size:.72rem;font-weight:700;letter-spacing:.06em;padding:.3rem .75rem;border-radius:20px;}
+
+    /* WHY */
+    .why-section{background:var(--off);}
+    .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;}
+    .why-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1.8rem;transition:border-color .2s,transform .2s,box-shadow .2s;}
+    .why-card:hover{border-color:var(--blue);transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,0,0,.07);}
+    .why-icon{width:46px;height:46px;background:rgba(29,78,216,.08);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.1rem;}
+    .why-icon svg{width:22px;height:22px;color:var(--blue);}
+    .why-title{font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:800;color:var(--ink);margin-bottom:.5rem;}
+    .why-desc{font-size:.84rem;color:var(--mid);line-height:1.65;}
+
+    /* PROCESS */
+    .process-section{background:var(--ink);}
+    .process-section .section-eyebrow{color:var(--blue2);}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem;}
+    .process-step{text-align:center;padding:2rem 1.2rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:8px;position:relative;transition:border-color .2s;}
+    .process-step:hover{border-color:rgba(59,130,246,.4);}
+    .process-num{font-family:'Montserrat',sans-serif;font-size:3rem;font-weight:900;color:rgba(59,130,246,.2);line-height:1;margin-bottom:.5rem;}
+    .process-icon{width:50px;height:50px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto .9rem;}
+    .process-icon svg{width:24px;height:24px;color:#fff;}
+    .process-title{font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:800;color:#fff;margin-bottom:.4rem;}
+    .process-desc{font-size:.81rem;color:rgba(255,255,255,.45);line-height:1.6;}
+
+    /* REVIEWS */
+    .reviews-section{background:var(--warm);}
+    .pullquote{border-left:4px solid var(--blue);padding:1.5rem 2rem;margin-bottom:3rem;background:var(--white);border-radius:0 8px 8px 0;box-shadow:0 2px 12px rgba(0,0,0,.05);}
+    .pullquote-text{font-family:'Montserrat',sans-serif;font-size:clamp(1.1rem,2vw,1.5rem);font-style:italic;color:var(--ink);line-height:1.55;margin-bottom:.75rem;font-weight:700;}
+    .pullquote-author{font-size:.8rem;color:var(--mid);font-weight:500;}
+    .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+    .review-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,.04);}
+    .review-stars{display:flex;gap:2px;margin-bottom:.7rem;}
+    .review-stars svg{width:13px;height:13px;color:#fbbf24;}
+    .review-text{font-size:.87rem;color:var(--mid);line-height:1.65;margin-bottom:.9rem;font-style:italic;}
+    .review-author{font-size:.73rem;color:var(--ink);font-weight:700;letter-spacing:.05em;text-transform:uppercase;}
+
+    /* AREA */
+    .area-section{background:var(--off);}
+    .area-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+    .area-map-card{background:var(--ink);border-radius:8px;overflow:hidden;position:relative;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;}
+    .area-map-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=800&q=80');background-size:cover;background-position:center;opacity:.2;}
+    .area-map-overlay{position:relative;z-index:1;text-align:center;padding:2rem;}
+    .area-pin{width:56px;height:56px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;box-shadow:0 0 0 14px rgba(29,78,216,.15);}
+    .area-pin svg{width:28px;height:28px;color:#fff;}
+    .area-map-text{font-family:'Montserrat',sans-serif;font-size:1.2rem;font-weight:800;color:#fff;margin-bottom:.3rem;}
+    .area-map-sub{font-size:.8rem;color:rgba(255,255,255,.5);}
+    .area-towns{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;}
+    .area-town{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:.85rem 1rem;display:flex;justify-content:space-between;align-items:center;}
+    .area-town-name{font-size:.86rem;font-weight:700;color:var(--ink);}
+    .area-town-time{font-size:.73rem;color:var(--mid);background:var(--card);padding:.18rem .5rem;border-radius:2px;font-weight:500;}
+
+    /* WARRANTY */
+    .warranty-section{background:var(--ink2);}
+    .warranty-section .section-eyebrow{color:var(--blue2);}
+    .warranty-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem;}
+    .warranty-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:1.8rem;display:flex;gap:1.2rem;align-items:flex-start;}
+    .warranty-icon{width:44px;height:44px;background:rgba(29,78,216,.2);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+    .warranty-icon svg{width:22px;height:22px;color:var(--blue2);}
+    .warranty-title{font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:800;color:#fff;margin-bottom:.4rem;}
+    .warranty-desc{font-size:.84rem;color:rgba(255,255,255,.45);line-height:1.65;}
+
+    /* FAQ */
+    .faq-section{background:var(--off);}
+    .faq-list{max-width:720px;margin:0 auto;}
+    .faq-item{border-bottom:1px solid var(--border);}
+    .faq-q{width:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.2rem 0;font-family:'Inter',sans-serif;font-size:.93rem;font-weight:600;color:var(--ink);text-align:left;transition:color .2s;}
+    .faq-q:hover{color:var(--blue);}
+    .faq-q svg{width:18px;height:18px;flex-shrink:0;color:var(--blue);transition:transform .3s;}
+    .faq-item.open .faq-q svg{transform:rotate(180deg);}
+    .faq-a{overflow:hidden;max-height:0;transition:max-height .35s ease,padding .25s ease;}
+    .faq-item.open .faq-a{max-height:300px;padding-bottom:1.2rem;}
+    .faq-a p{font-size:.9rem;color:var(--mid);line-height:1.75;}
+
+    /* CTA BAND */
+    .cta-band{background:var(--blue);padding:4rem 2rem;text-align:center;}
+    .cta-band h2{font-size:clamp(1.9rem,4vw,3rem);font-weight:900;color:#fff;margin-bottom:.5rem;letter-spacing:-.01em;}
+    .cta-phone{font-size:clamp(2.2rem,5vw,3.8rem);font-weight:900;color:#fff;font-family:'Montserrat',sans-serif;margin:.75rem 0 1.5rem;}
+    .cta-sub{color:rgba(255,255,255,.8);font-size:.95rem;margin-bottom:2rem;}
+    .btn-white{display:inline-flex;align-items:center;gap:.5rem;background:#fff;color:var(--blue);padding:.9rem 2.2rem;border-radius:5px;font-weight:700;font-size:1rem;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 20px rgba(0,0,0,.15);}
+    .btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.2);}
+    .btn-white svg{width:18px;height:18px;}
+
+    /* CONTACT */
+    .contact-section{background:var(--ink);}
+    .contact-section .section-eyebrow{color:var(--blue2);}
+    .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:start;}
+    .hours-table{width:100%;border-collapse:collapse;margin-top:1rem;}
+    .hours-table td{padding:.6rem 0;font-size:.88rem;border-bottom:1px solid rgba(255,255,255,.05);}
+    .hours-table .day-col{color:rgba(255,255,255,.45);}
+    .hours-table .time-col{color:rgba(255,255,255,.85);font-weight:600;text-align:right;}
+    .hours-table tr.today td{color:var(--blue2);font-weight:700;}
+    .contact-info-block{margin-top:2rem;display:flex;flex-direction:column;gap:1rem;}
+    .cib-row{display:flex;align-items:center;gap:.75rem;}
+    .cib-row svg{width:15px;height:15px;color:var(--blue2);flex-shrink:0;}
+    .cib-row span{font-size:.88rem;color:rgba(255,255,255,.6);}
+    .callback-form{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:10px;padding:2.5rem;}
+    .form-title{font-family:'Montserrat',sans-serif;font-size:1.35rem;font-weight:800;color:#fff;margin-bottom:1.5rem;letter-spacing:.01em;}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+    .form-group{display:flex;flex-direction:column;gap:.4rem;}
+    .form-group.full{grid-column:1/-1;}
+    .form-group label{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.4);}
+    .form-group input,.form-group textarea,.form-group select{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:5px;padding:.7rem 1rem;color:#fff;font-family:'Inter',sans-serif;font-size:.88rem;transition:border-color .2s;outline:none;}
+    .form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,.2);}
+    .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--blue2);}
+    .form-group select option{background:var(--ink2);color:#fff;}
+    .form-group textarea{resize:vertical;min-height:90px;}
+    .form-submit{margin-top:1.2rem;width:100%;background:var(--blue);color:#fff;border:none;border-radius:5px;padding:.9rem;font-family:'Inter',sans-serif;font-size:.93rem;font-weight:700;cursor:pointer;letter-spacing:.04em;transition:background .2s,transform .15s;}
+    .form-submit:hover{background:var(--blue2);transform:translateY(-1px);}
+
+    /* FOOTER */
+    footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:3rem 2rem 1.5rem;}
+    .footer-inner{max-width:1100px;margin:0 auto;}
+    .footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.06);}
+    .footer-brand-name{font-family:'Montserrat',sans-serif;font-size:1.3rem;font-weight:900;color:#fff;margin-bottom:.4rem;}
+    .footer-brand-tag{font-size:.82rem;color:rgba(255,255,255,.35);line-height:1.65;max-width:280px;}
+    .footer-col-title{font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue2);margin-bottom:1rem;}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.6rem;}
+    .footer-col ul li a{font-size:.85rem;color:rgba(255,255,255,.4);transition:color .2s;}
+    .footer-col ul li a:hover{color:var(--blue2);}
+    .footer-bottom{display:flex;align-items:center;justify-content:space-between;padding-top:1.5rem;flex-wrap:wrap;gap:1rem;}
+    .footer-copy{font-size:.75rem;color:rgba(255,255,255,.25);}
+    .footer-rating{display:flex;align-items:center;gap:.4rem;}
+    .footer-rating svg{width:12px;height:12px;color:#fbbf24;}
+    .footer-rating span{font-size:.75rem;color:rgba(255,255,255,.3);}
+
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease;}
+    .reveal.in{opacity:1;transform:none;}
+    .rl{opacity:0;transform:translateX(-26px);transition:opacity .6s ease,transform .6s ease;}
+    .rl.in{opacity:1;transform:none;}
+    .rr{opacity:0;transform:translateX(26px);transition:opacity .6s ease,transform .6s ease;}
+    .rr.in{opacity:1;transform:none;}
+    .d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}.d4{transition-delay:.4s;}
+
+    @media(max-width:1024px){
+      .hero-content{grid-template-columns:1fr;}
+      .hero-card{max-width:400px;}
+      .stats-grid{grid-template-columns:repeat(2,1fr);}
+      .services-grid{grid-template-columns:repeat(2,1fr);}
+      .why-grid{grid-template-columns:repeat(2,1fr);}
+      .process-grid{grid-template-columns:repeat(2,1fr);}
+      .review-grid{grid-template-columns:1fr 1fr;}
+      .mark-grid{grid-template-columns:1fr;}
+      .warranty-grid{grid-template-columns:1fr;}
+    }
+    @media(max-width:768px){
+      .topbar-left{display:none;}
+      .nav-links{display:none;}
+      nav{padding:0 1rem;}
+      section{padding:3.5rem 1rem;}
+      .services-grid{grid-template-columns:1fr;}
+      .about-grid{grid-template-columns:1fr;}
+      .about-badge-circle{bottom:-.75rem;right:-.75rem;width:100px;height:100px;}
+      .why-grid{grid-template-columns:1fr;}
+      .process-grid{grid-template-columns:1fr 1fr;}
+      .review-grid{grid-template-columns:1fr;}
+      .area-grid{grid-template-columns:1fr;}
+      .contact-grid{grid-template-columns:1fr;}
+      .footer-top{grid-template-columns:1fr;gap:2rem;}
+      .form-grid{grid-template-columns:1fr;}
+      .hero-content{padding:4rem 1rem 3rem;}
+      .bbb-strip{gap:1rem;}
+    }
+  </style>
+</head>
+<body>
+
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></symbol>
+  <symbol id="i-brake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/></symbol>
+  <symbol id="i-engine" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7h10v4"/><path d="M12 7V3"/><path d="M8 3h8"/></symbol>
+  <symbol id="i-oil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M5 10c0 5.5 2.5 10 7 10s7-4.5 7-10c0-2-1-4-3-6H8C6 6 5 8 5 10z"/></symbol>
+  <symbol id="i-snowflake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="m17 7-5 5-5-5"/><path d="m17 17-5-5-5 5"/><line x1="2" y1="12" x2="22" y2="12"/><path d="m7 7 5 5 5-5"/><path d="m7 17 5-5 5 5"/></symbol>
+  <symbol id="i-suspend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18M5 17V9a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="13" x2="23" y2="11"/><line x1="12" y1="9" x2="12" y2="15"/><line x1="9" y1="12" x2="15" y2="12"/></symbol>
+  <symbol id="i-exhaust" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M7 12V6"/><path d="M17 12V6"/><path d="M12 12V8"/><circle cx="4" cy="18" r="2"/><circle cx="20" cy="18" r="2"/></symbol>
+  <symbol id="i-inspect" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+  <symbol id="i-clock2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-dollar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-thumbup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></symbol>
+</svg>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <div class="topbar-item"><svg><use href="#i-pin"/></svg> 109 Industrial Ave E, Unit 4, Lowell, MA 01852</div>
+    <div class="topbar-item"><svg><use href="#i-clock"/></svg> Mon-Fri 8:30AM-6:30PM &nbsp;|&nbsp; Sat 8AM-1PM &nbsp;|&nbsp; Sun Closed</div>
+    <div class="topbar-item"><svg><use href="#i-award"/></svg> A+ BBB Rating</div>
+  </div>
+  <a href="tel:9789436548" class="topbar-cta"><svg><use href="#i-phone"/></svg> (978) 943-6548</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">
+    <div class="nav-logo"><svg><use href="#i-wrench"/></svg></div>
+    <div>
+      <div class="nav-name">High Tech Auto Repairs</div>
+      <div class="nav-city">Lowell, Massachusetts</div>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="tel:9789436548" class="nav-cta"><svg><use href="#i-phone"/></svg> Call Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-img"></div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-badge"><svg><use href="#i-pin"/></svg> Lowell, Massachusetts</div>
+      <h1>Precision Repairs.<br><em>Honest Results.</em></h1>
+      <p class="hero-sub">High Tech Auto Repairs brings advanced diagnostics and transparent service to Lowell drivers. Owner Mark works on your car personally - and explains everything before a single bolt is turned.</p>
+      <div class="hero-actions">
+        <a href="tel:9789436548" class="btn-primary"><svg><use href="#i-phone"/></svg> Call (978) 943-6548</a>
+        <a href="#services" class="btn-outline"><svg><use href="#i-arrow"/></svg> Our Services</a>
+      </div>
+    </div>
+    <div class="hero-card reveal d1">
+      <div class="hero-card-title"><svg><use href="#i-clock"/></svg> Hours &amp; Location</div>
+      <div class="card-row">
+        <svg><use href="#i-clock"/></svg>
+        <div>
+          <span class="card-label">Business Hours</span>
+          <div class="card-hours-grid">
+            <span class="day">Mon - Fri</span><span class="time">8:30 AM - 6:30 PM</span>
+            <span class="day">Saturday</span><span class="time">8:00 AM - 1:00 PM</span>
+            <span class="day">Sunday</span><span class="time">Closed</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-row">
+        <svg><use href="#i-pin"/></svg>
+        <div>
+          <span class="card-label">Address</span>
+          109 Industrial Ave E, Unit 4<br>Lowell, MA 01852
+        </div>
+      </div>
+      <div class="card-row">
+        <svg><use href="#i-phone"/></svg>
+        <div>
+          <span class="card-label">Phone</span>
+          <a href="tel:9789436548" style="color:#fff;font-weight:700;">(978) 943-6548</a>
+        </div>
+      </div>
+      <div class="hero-rating">
+        <div class="stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <div class="hero-rating-text"><strong>4.6 Stars</strong> - 139 Reviews</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BBB STRIP -->
+<div class="bbb-strip">
+  <div class="bbb-item"><svg><use href="#i-award"/></svg> <strong>A+ BBB Rating</strong></div>
+  <div class="bbb-item"><svg><use href="#i-shield"/></svg> <strong>1-Year Warranty</strong> on All Repairs</div>
+  <div class="bbb-item"><svg><use href="#i-star"/></svg> <strong>4.6 Stars</strong> across 139 Reviews</div>
+  <div class="bbb-item"><svg><use href="#i-check"/></svg> In Business Since <strong>2014</strong></div>
+  <div class="bbb-item"><svg><use href="#i-users"/></svg> All Makes <strong>&amp; Models</strong></div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal"><div class="stat-num">4.6<svg style="width:1.4rem;height:1.4rem;color:#fff;vertical-align:middle;margin-left:.2rem;margin-bottom:.3rem;display:inline-block;fill:currentColor;"><use href="#i-star"/></svg></div><div class="stat-label">Star Rating</div></div>
+    <div class="stat-item reveal d1"><div class="stat-num">139+</div><div class="stat-label">Customer Reviews</div></div>
+    <div class="stat-item reveal d2"><div class="stat-num">1 Yr</div><div class="stat-label">Repair Warranty</div></div>
+    <div class="stat-item reveal d3"><div class="stat-num">A+</div><div class="stat-label">BBB Rating</div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-section" id="services">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">What We Fix</p>
+    <h2 class="section-title reveal">Full-Service Auto Repair</h2>
+    <p class="section-lead reveal">From a simple oil change to complex engine diagnostics, High Tech Auto Repairs has the tools, training, and technology to handle it all - on all makes and models.</p>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon"><svg><use href="#i-brake"/></svg></div>
+        <div class="service-name">Brakes &amp; Rotors</div>
+        <p class="service-desc">Your most important safety system deserves expert attention. We inspect, repair, and replace all brake components with quality parts.</p>
+        <ul class="service-list">
+          <li>Pad and rotor replacement</li>
+          <li>Brake fluid flush</li>
+          <li>Caliper service</li>
+          <li>ABS system diagnostics</li>
+        </ul>
+      </div>
+      <div class="service-card reveal d1">
+        <div class="service-icon"><svg><use href="#i-engine"/></svg></div>
+        <div class="service-name">Engine Diagnostics &amp; Repair</div>
+        <p class="service-desc">Advanced OBD-II scanning and hands-on expertise to diagnose exactly what's wrong - and fix it right the first time.</p>
+        <ul class="service-list">
+          <li>Check engine light diagnosis</li>
+          <li>Tune-ups &amp; spark plugs</li>
+          <li>Timing belt service</li>
+          <li>Fan clutch &amp; water pump</li>
+        </ul>
+      </div>
+      <div class="service-card reveal d2">
+        <div class="service-icon"><svg><use href="#i-oil"/></svg></div>
+        <div class="service-name">Oil Change &amp; Maintenance</div>
+        <p class="service-desc">Keep your engine running longer with regular oil changes and comprehensive maintenance inspections performed on your schedule.</p>
+        <ul class="service-list">
+          <li>Conventional &amp; synthetic oil</li>
+          <li>Filter replacement</li>
+          <li>Fluid top-off</li>
+          <li>Multi-point inspection</li>
+        </ul>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><svg><use href="#i-snowflake"/></svg></div>
+        <div class="service-name">A/C &amp; Cooling System</div>
+        <p class="service-desc">Don't overheat this summer. We service your A/C and cooling system to keep your engine - and your cabin - at the right temperature.</p>
+        <ul class="service-list">
+          <li>A/C recharge &amp; inspection</li>
+          <li>Radiator repair</li>
+          <li>Coolant flush</li>
+          <li>Thermostat replacement</li>
+        </ul>
+      </div>
+      <div class="service-card reveal d1">
+        <div class="service-icon"><svg><use href="#i-suspend"/></svg></div>
+        <div class="service-name">Suspension &amp; Steering</div>
+        <p class="service-desc">Rough ride, vibration, or pulling to one side? We diagnose and restore your suspension and steering systems to factory performance.</p>
+        <ul class="service-list">
+          <li>Shocks &amp; struts</li>
+          <li>Wheel alignment</li>
+          <li>Power steering service</li>
+          <li>Ball joints &amp; tie rods</li>
+        </ul>
+      </div>
+      <div class="service-card reveal d2">
+        <div class="service-icon"><svg><use href="#i-battery"/></svg></div>
+        <div class="service-name">Battery &amp; Electrical</div>
+        <p class="service-desc">From dead batteries to alternator failures, we test, diagnose, and repair your vehicle's entire electrical system fast.</p>
+        <ul class="service-list">
+          <li>Battery testing &amp; replacement</li>
+          <li>Alternator repair</li>
+          <li>Starter service</li>
+          <li>Fuel filler neck &amp; fuel system</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="rl" style="position:relative;">
+        <div class="about-img"></div>
+        <div class="about-badge-circle">
+          <div class="about-badge-num">4.6</div>
+          <div class="about-badge-label">Star<br>Rating</div>
+        </div>
+      </div>
+      <div class="rr">
+        <p class="section-eyebrow">About the Shop</p>
+        <h2 class="section-title">Advanced Tech.<br>Old-School Trust.</h2>
+        <p style="color:var(--mid);font-size:.95rem;line-height:1.8;margin-bottom:1rem;">
+          High Tech Auto Repairs has been serving the Lowell community since 2014 with a simple philosophy: use the best diagnostic technology available, and be completely honest with every customer about what their car needs.
+        </p>
+        <p style="color:var(--mid);font-size:.95rem;line-height:1.8;margin-bottom:1.5rem;">
+          Located at 109 Industrial Ave E in Lowell, we work on all makes and models with a level of care and communication that sets us apart from the chains - and back every repair with a 1-year warranty.
+        </p>
+        <ul class="about-checks">
+          <li><div class="check-dot"><svg><use href="#i-check"/></svg></div>Advanced OBD-II diagnostics on all makes and models</li>
+          <li><div class="check-dot"><svg><use href="#i-check"/></svg></div>1-year warranty on every repair performed</li>
+          <li><div class="check-dot"><svg><use href="#i-check"/></svg></div>A+ Better Business Bureau rating</li>
+          <li><div class="check-dot"><svg><use href="#i-check"/></svg></div>No work starts until you approve the estimate</li>
+          <li><div class="check-dot"><svg><use href="#i-check"/></svg></div>Owner Mark personally explains what's wrong with your car</li>
+        </ul>
+        <a href="tel:9789436548" class="btn-primary" style="display:inline-flex;"><svg><use href="#i-phone"/></svg> Call (978) 943-6548</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARK - OWNER -->
+<section class="mark-section">
+  <div class="section-inner">
+    <div class="mark-grid">
+      <div class="rl" style="position:relative;">
+        <div class="mark-img">
+          <div class="mark-caption">
+            Mark<br>
+            <div class="mark-sub">Owner &amp; Lead Technician</div>
+          </div>
+        </div>
+      </div>
+      <div class="rr">
+        <p class="section-eyebrow">A Word from Mark</p>
+        <h2 class="section-title light">Your Car, Your Decision - Always.</h2>
+        <p class="mark-quote">"I went out of my way to help customers when our car was dead - because that's what good mechanics do."</p>
+        <p class="mark-body">Mark built High Tech Auto Repairs on a commitment to transparency that's become rare in the industry. He shows you the part that needs to be replaced. He explains why, in plain language. He catches problems early - like a rotted power steering cooler that would've eventually burned out your rack - so you're never caught off guard.</p>
+        <p class="mark-body" style="margin-top:-.5rem;">His customers drive from across the Merrimack Valley because they know they're getting an honest answer and quality work - every single time.</p>
+        <div class="mark-chips">
+          <span class="chip">Honest Diagnostics</span>
+          <span class="chip">Advanced Equipment</span>
+          <span class="chip">1-Year Warranty</span>
+          <span class="chip">All Makes &amp; Models</span>
+          <span class="chip">A+ BBB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why-section">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal" style="text-align:center;">The High Tech Difference</p>
+    <h2 class="section-title reveal" style="text-align:center;">Why Lowell Drivers Choose Us</h2>
+    <p class="section-lead reveal" style="margin:0 auto 0;text-align:center;">We combine cutting-edge diagnostics with the kind of straight-talking honesty you can only get from an independent shop.</p>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="why-icon"><svg><use href="#i-inspect"/></svg></div><div class="why-title">Advanced Diagnostics</div><p class="why-desc">We use the latest OBD-II tools to read your car's systems precisely - catching problems early and avoiding unnecessary repairs.</p></div>
+      <div class="why-card reveal d1"><div class="why-icon"><svg><use href="#i-dollar"/></svg></div><div class="why-title">Competitive, Fair Pricing</div><p class="why-desc">We only charge for what your car actually needs. No upselling, no inflated labor hours. Just a fair price for quality work.</p></div>
+      <div class="why-card reveal d2"><div class="why-icon"><svg><use href="#i-shield"/></svg></div><div class="why-title">1-Year Repair Warranty</div><p class="why-desc">Every repair we perform is backed by a full 1-year warranty. If something isn't right, we make it right - no questions asked.</p></div>
+      <div class="why-card reveal"><div class="why-icon"><svg><use href="#i-thumbup"/></svg></div><div class="why-title">Full Transparency</div><p class="why-desc">Mark shows you the part, explains the problem in plain language, and walks you through the estimate before any work begins.</p></div>
+      <div class="why-card reveal d1"><div class="why-icon"><svg><use href="#i-wrench"/></svg></div><div class="why-title">All Makes &amp; Models</div><p class="why-desc">Domestic, foreign, compact or SUV - our equipment and experience cover virtually every vehicle on the road today.</p></div>
+      <div class="why-card reveal d2"><div class="why-icon"><svg><use href="#i-award"/></svg></div><div class="why-title">A+ BBB &amp; 4.6 Stars</div><p class="why-desc">Our A+ Better Business Bureau rating and 139 customer reviews across Google and Facebook say it better than we can.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="process-section">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal" style="text-align:center;">Simple Every Time</p>
+    <h2 class="section-title light reveal" style="text-align:center;">How It Works</h2>
+    <p class="section-lead light reveal" style="margin:0 auto;text-align:center;">Getting your car fixed at High Tech is fast, transparent, and stress-free from start to finish.</p>
+    <div class="process-grid">
+      <div class="process-step reveal"><div class="process-num">01</div><div class="process-icon"><svg><use href="#i-phone"/></svg></div><div class="process-title">Call or Stop In</div><p class="process-desc">Call (978) 943-6548 or drop by 109 Industrial Ave E, Unit 4. Mon-Fri 8:30-6:30, Sat 8-1.</p></div>
+      <div class="process-step reveal d1"><div class="process-num">02</div><div class="process-icon"><svg><use href="#i-inspect"/></svg></div><div class="process-title">We Diagnose It</div><p class="process-desc">Mark runs a thorough inspection using advanced diagnostic tools and shows you exactly what he finds.</p></div>
+      <div class="process-step reveal d2"><div class="process-num">03</div><div class="process-icon"><svg><use href="#i-check"/></svg></div><div class="process-title">Approve the Price</div><p class="process-desc">You get a clear, itemized estimate. We never start work until you've approved every line - guaranteed.</p></div>
+      <div class="process-step reveal d3"><div class="process-num">04</div><div class="process-icon"><svg><use href="#i-arrow"/></svg></div><div class="process-title">Drive Away Confident</div><p class="process-desc">Your vehicle is repaired right, backed by our 1-year warranty, and ready when we promised.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">What People Say</p>
+    <h2 class="section-title reveal">Lowell's Most Trusted Auto Shop</h2>
+    <div class="pullquote reveal">
+      <div class="pullquote-text">"He went out of his way to help us when our car was dead near closing on a Saturday - showed us the part being replaced and got us back on the road. Thank you so much."</div>
+      <div class="pullquote-author">- Donna N. Bardwell, Facebook Review</div>
+    </div>
+    <div class="review-grid">
+      <div class="review-card reveal">
+        <div class="review-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p class="review-text">"Just had my fan clutch, water pump, and fuel filler neck done by Mark - who also caught that my power steering cooler was rotted out. Fast service and very reasonable rates. Highly recommend."</p>
+        <div class="review-author">- Michael K., Facebook Review</div>
+      </div>
+      <div class="review-card reveal d1">
+        <div class="review-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p class="review-text">"Mark took a peek at my brakes while I was there and brought me over to explain everything. I've never met a mechanic who went out of their way like that. Price was completely reasonable."</p>
+        <div class="review-author">- Gina G. Sandelli, Facebook Review</div>
+      </div>
+      <div class="review-card reveal d2">
+        <div class="review-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p class="review-text">"High Tech auto is the best place in Lowell hands down. Mark only took one day to fix my brakes, rotors and AC. He's amazingly fast, honest, and has the best prices. Highly recommend."</p>
+        <div class="review-author">- Felicia S., Facebook Review</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p class="review-text">"Have been going to this shop for a long time. Prices are very reasonable and the people that work there are very friendly. I won't go anywhere else."</p>
+        <div class="review-author">- Elaine S. Hopkins, Facebook Review</div>
+      </div>
+      <div class="review-card reveal d1">
+        <div class="review-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p class="review-text">"Brought my car in and Mark diagnosed it within the hour. Fixed the same day. No surprises on the bill - the price matched the estimate exactly. This is how auto repair should work."</p>
+        <div class="review-author">- Google Reviewer, Lowell, MA</div>
+      </div>
+      <div class="review-card reveal d2">
+        <div class="review-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p class="review-text">"Finally found a mechanic I can trust. Mark is thorough, honest, and doesn't try to upsell you. The 1-year warranty gives me real peace of mind. I send everyone I know here."</p>
+        <div class="review-author">- Google Reviewer, Merrimack Valley</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="area-section">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">We Serve the Whole Region</p>
+    <h2 class="section-title reveal">Serving Lowell &amp; the Merrimack Valley</h2>
+    <p class="section-lead reveal">Conveniently located in Lowell's industrial district - easy to reach from communities across the region.</p>
+    <div class="area-grid">
+      <div class="reveal">
+        <div class="area-map-card">
+          <div class="area-map-bg"></div>
+          <div class="area-map-overlay">
+            <div class="area-pin"><svg><use href="#i-pin"/></svg></div>
+            <div class="area-map-text">High Tech Auto Repairs</div>
+            <div class="area-map-sub">109 Industrial Ave E, Unit 4, Lowell MA 01852</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal d1">
+        <p style="font-size:.87rem;color:var(--mid);margin-bottom:1.25rem;line-height:1.7;">Customers come from across Middlesex County and beyond because quality honest service is worth a short drive. Here are approximate drive times:</p>
+        <div class="area-towns">
+          <div class="area-town"><span class="area-town-name">Lowell</span><span class="area-town-time">Right here</span></div>
+          <div class="area-town"><span class="area-town-name">Chelmsford</span><span class="area-town-time">~8 min</span></div>
+          <div class="area-town"><span class="area-town-name">Billerica</span><span class="area-town-time">~10 min</span></div>
+          <div class="area-town"><span class="area-town-name">Tewksbury</span><span class="area-town-time">~10 min</span></div>
+          <div class="area-town"><span class="area-town-name">Dracut</span><span class="area-town-time">~8 min</span></div>
+          <div class="area-town"><span class="area-town-name">Methuen</span><span class="area-town-time">~15 min</span></div>
+          <div class="area-town"><span class="area-town-name">Lawrence</span><span class="area-town-time">~18 min</span></div>
+          <div class="area-town"><span class="area-town-name">Nashua, NH</span><span class="area-town-time">~20 min</span></div>
+        </div>
+        <a href="https://maps.google.com/?q=109+Industrial+Ave+E+Lowell+MA+01852" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex;margin-top:1.5rem;"><svg><use href="#i-pin"/></svg> Get Directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WARRANTY -->
+<section class="warranty-section">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal" style="text-align:center;">Your Protection</p>
+    <h2 class="section-title light reveal" style="text-align:center;">Our Warranty &amp; Commitments</h2>
+    <p class="section-lead light reveal" style="margin:0 auto;text-align:center;">We stand behind every repair with guarantees that protect you long after you drive away.</p>
+    <div class="warranty-grid">
+      <div class="warranty-card reveal">
+        <div class="warranty-icon"><svg><use href="#i-shield"/></svg></div>
+        <div>
+          <div class="warranty-title">1-Year Parts &amp; Labor Warranty</div>
+          <p class="warranty-desc">Every repair High Tech performs is backed by a full 1-year warranty on both parts and labor. If a repair we performed fails within a year, we fix it - at no cost to you.</p>
+        </div>
+      </div>
+      <div class="warranty-card reveal d1">
+        <div class="warranty-icon"><svg><use href="#i-dollar"/></svg></div>
+        <div>
+          <div class="warranty-title">Price Match Promise</div>
+          <p class="warranty-desc">We offer competitive pricing and only charge for what you actually need. We'll provide a written estimate before any work begins, and the final bill matches that estimate.</p>
+        </div>
+      </div>
+      <div class="warranty-card reveal d2">
+        <div class="warranty-icon"><svg><use href="#i-inspect"/></svg></div>
+        <div>
+          <div class="warranty-title">Honest Inspection Report</div>
+          <p class="warranty-desc">Every vehicle that comes in gets a thorough inspection. We'll show you what we found, what needs attention now, and what can wait - so you can make informed decisions.</p>
+        </div>
+      </div>
+      <div class="warranty-card reveal d3">
+        <div class="warranty-icon"><svg><use href="#i-thumbup"/></svg></div>
+        <div>
+          <div class="warranty-title">No Work Without Approval</div>
+          <p class="warranty-desc">We never start on your vehicle without your explicit approval. You'll know the full cost and scope before a single wrench turns. No surprise charges, ever.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal" style="text-align:center;">Questions?</p>
+    <h2 class="section-title reveal" style="text-align:center;">Frequently Asked Questions</h2>
+    <div class="faq-list reveal">
+      <div class="faq-item"><button class="faq-q">Do you offer a warranty on repairs?<svg><use href="#i-chevron-down"/></svg></button><div class="faq-a"><p>Yes - every repair performed at High Tech Auto Repairs is backed by a 1-year warranty on both parts and labor. If something we repaired fails within a year, we'll make it right at no charge to you.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Do I need an appointment or can I walk in?<svg><use href="#i-chevron-down"/></svg></button><div class="faq-a"><p>Walk-ins are always welcome. That said, calling ahead at (978) 943-6548 helps us prepare and may reduce your wait time. We're open Mon-Fri 8:30 AM to 6:30 PM and Saturday 8:00 AM to 1:00 PM.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Do you work on all makes and models?<svg><use href="#i-chevron-down"/></svg></button><div class="faq-a"><p>Yes. We service domestic and foreign vehicles of virtually all makes and models - cars, trucks, and SUVs. If you're unsure whether we can help with your specific vehicle, just give us a call.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Will you explain what's wrong before starting?<svg><use href="#i-chevron-down"/></svg></button><div class="faq-a"><p>Always. Owner Mark personally walks you through what was found during inspection, shows you the part that needs replacing if applicable, and explains the repair in plain language. No work starts without your approval.</p></div></div>
+      <div class="faq-item"><button class="faq-q">How long will my repair take?<svg><use href="#i-chevron-down"/></svg></button><div class="faq-a"><p>It depends on the repair - many jobs like brake service and oil changes are done same-day. We'll give you a realistic time estimate when you drop off, and call you as soon as your vehicle is ready.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What if my car broke down and I'm not from Lowell?<svg><use href="#i-chevron-down"/></svg></button><div class="faq-a"><p>We've helped plenty of drivers passing through who found themselves in a tough spot. We'll do our best to prioritize you and get you back on the road safely - just like we did for customers who were hours from home.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What payment methods do you accept?<svg><use href="#i-chevron-down"/></svg></button><div class="faq-a"><p>We accept cash and major credit and debit cards. If you have questions about payment before your visit, give us a call at (978) 943-6548.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2 class="reveal">Ready to Get Your Car Fixed Right?</h2>
+  <div class="cta-phone reveal"><a href="tel:9789436548" style="color:#fff;">(978) 943-6548</a></div>
+  <p class="cta-sub reveal">Mon-Fri 8:30 AM - 6:30 PM &nbsp;|&nbsp; Saturday 8:00 AM - 1:00 PM</p>
+  <a href="tel:9789436548" class="btn-white reveal"><svg><use href="#i-phone"/></svg> Call Now</a>
+</div>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div>
+        <p class="section-eyebrow reveal">Find Us</p>
+        <h2 class="section-title light reveal">Hours &amp; Location</h2>
+        <table class="hours-table reveal">
+          <tbody>
+            <tr><td class="day-col">Monday</td><td class="time-col">8:30 AM - 6:30 PM</td></tr>
+            <tr><td class="day-col">Tuesday</td><td class="time-col">8:30 AM - 6:30 PM</td></tr>
+            <tr><td class="day-col">Wednesday</td><td class="time-col">8:30 AM - 6:30 PM</td></tr>
+            <tr><td class="day-col">Thursday</td><td class="time-col">8:30 AM - 6:30 PM</td></tr>
+            <tr><td class="day-col">Friday</td><td class="time-col">8:30 AM - 6:30 PM</td></tr>
+            <tr><td class="day-col">Saturday</td><td class="time-col">8:00 AM - 1:00 PM</td></tr>
+            <tr><td class="day-col">Sunday</td><td class="time-col" style="color:rgba(255,255,255,.25);">Closed</td></tr>
+          </tbody>
+        </table>
+        <div class="contact-info-block reveal">
+          <div class="cib-row"><svg><use href="#i-phone"/></svg><span><a href="tel:9789436548" style="color:rgba(255,255,255,.6);">(978) 943-6548</a></span></div>
+          <div class="cib-row"><svg><use href="#i-pin"/></svg><span>109 Industrial Ave E, Unit 4, Lowell, MA 01852</span></div>
+          <div class="cib-row"><svg><use href="#i-award"/></svg><span>A+ Better Business Bureau Rating</span></div>
+          <div class="cib-row"><svg><use href="#i-shield"/></svg><span>1-Year Warranty on All Repairs</span></div>
+        </div>
+      </div>
+      <div class="callback-form reveal">
+        <div class="form-title">Request a Service Appointment</div>
+        <form onsubmit="handleForm(event)">
+          <div class="form-grid">
+            <div class="form-group"><label>Your Name</label><input type="text" placeholder="John Smith"/></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="(978) 000-0000"/></div>
+            <div class="form-group full"><label>Vehicle</label><input type="text" placeholder="Year, Make, Model (e.g. 2019 Toyota Camry)"/></div>
+            <div class="form-group full">
+              <label>Service Needed</label>
+              <select>
+                <option value="" disabled selected>Select a service...</option>
+                <option>Brake Inspection / Repair</option>
+                <option>Engine Diagnostics</option>
+                <option>Oil Change &amp; Maintenance</option>
+                <option>A/C &amp; Cooling System</option>
+                <option>Suspension / Steering</option>
+                <option>Battery / Electrical</option>
+                <option>Exhaust System</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group full"><label>Describe the Issue</label><textarea placeholder="Tell us what's going on with your vehicle..."></textarea></div>
+          </div>
+          <button type="submit" class="form-submit">Request Appointment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">High Tech Auto Repairs</div>
+        <p class="footer-brand-tag">Advanced diagnostics and honest auto repair serving Lowell and the Merrimack Valley since 2014. A+ BBB rated with a 1-year warranty on every repair.</p>
+        <div class="footer-rating" style="margin-top:1rem;">
+          <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+          <span>4.6 Stars - 139 Reviews - A+ BBB</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <ul>
+          <li><a href="#services">Brakes &amp; Rotors</a></li>
+          <li><a href="#services">Engine Diagnostics</a></li>
+          <li><a href="#services">Oil Change &amp; Maintenance</a></li>
+          <li><a href="#services">A/C &amp; Cooling</a></li>
+          <li><a href="#services">Suspension &amp; Steering</a></li>
+          <li><a href="#services">Battery &amp; Electrical</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Info</div>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="tel:9789436548">(978) 943-6548</a></li>
+          <li><a href="https://maps.google.com/?q=109+Industrial+Ave+E+Lowell+MA" target="_blank" rel="noopener">Get Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2025 High Tech Auto Repairs - 109 Industrial Ave E, Unit 4, Lowell, MA 01852</div>
+      <div class="footer-copy">Mon-Fri 8:30AM-6:30PM &nbsp;|&nbsp; Sat 8AM-1PM &nbsp;|&nbsp; Sun Closed</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('in');observer.unobserve(e.target);} });
+  },{threshold:0.1});
+  document.querySelectorAll('.reveal,.rl,.rr').forEach(el=>observer.observe(el));
+
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const item=btn.closest('.faq-item');
+      const isOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+      if(!isOpen)item.classList.add('open');
+    });
+  });
+
+  const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const today=days[new Date().getDay()];
+  document.querySelectorAll('.hours-table td.day-col').forEach(td=>{
+    if(td.textContent.trim()===today)td.closest('tr').classList.add('today');
+  });
+
+  function handleForm(e){
+    e.preventDefault();
+    const btn=e.target.querySelector('.form-submit');
+    btn.textContent="Request Sent! We'll be in touch shortly.";
+    btn.style.background='#1a6b1a';
+    btn.disabled=true;
+  }
+</script>
+</body>
+</html>
